@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>BOAT RECALLS AND SAFETY DEFECTS </h1>
+  <p>This website aims to provide safety information to the general public through providing a summary of the details of boats that have been recalled in the United States from 2018 and 2020.</p>
+</div>
+
+<div class="navbar">
+    <a class="active" href="home.html">Home</a>
+    <a href="table1.html">2020 Recalls</a>
+    <a href="table2.html">2019 Recalls</a>
+    <a href="table3.html">2018 Recalls</a>
+    <a href="aboutus.html">About Us</a>
+</div>
+
+    <div class="main">
+    <h2>Our Mission</h2>    
+    <p>To minimize the loss of life, personal injury, property damage, and environmental impact associated with the use of recreational boats, through preventive means, in order to maximize safe use and enjoyment of U.S. Waterways by the public.</p>
+    <img src = "Boat.png" alt="Jane" style="width:100%">     
+    </div>
+
+   
+   
+<div class="footer">
+  <h2>Copyright 2020. Site created for DIS Assignment</h2>
+</div>
+
+</body>
+</html>
